@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entity;
 
-public class User
+public class User : BaseEntity
 {
     public Guid Id { get; set; }
     public string FirstName { get; set; }
@@ -8,4 +8,5 @@ public class User
     public string Email { get; set; }
     public string Password { get; set; }
     public virtual ICollection<Message> Messages { get; set; }
+    public virtual ICollection<GroupMember> Groups { get; set; }
 }

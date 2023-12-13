@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entity;
 
-public class GroupMember
+public class GroupMember : BaseEntity
 {
     public int Id { get; set; }
     public Guid GroupId { get; set; }
