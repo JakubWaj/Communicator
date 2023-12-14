@@ -1,12 +1,22 @@
-﻿namespace Domain.Entity;
+﻿using Domain.ValueObjects.User;
 
-public class User : BaseEntity
+namespace Domain.Entity;
+
+public class User
 {
-    public Guid Id { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Email { get; set; }
-    public string Password { get; set; }
-    public virtual ICollection<Message> Messages { get; set; }
-    public virtual ICollection<GroupMember> Groups { get; set; }
+    public UserId Id { get;private set; }
+    public Username Username { get;private set; }
+    public Email Email { get;private set; }
+    public Password Password { get;private set; }
+    public DateTime CreatedAt { get;private set; }
+
+
+    public User(UserId id, Username username, Email email, Password password, DateTime createdAt)
+    {
+        Id = id;
+        Username = username;
+        Email = email;
+        Password = password;
+        CreatedAt = createdAt;
+    }
 }
