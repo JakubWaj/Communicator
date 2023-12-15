@@ -13,6 +13,7 @@ public static class Extensions
         services.AddPostgres(configuration);
         services.AddAuth(configuration);
         services.AddSecurity();
+        services.AddHttpContextAccessor();
         return services;
     }
     public static T GetOptions<T>(this IConfiguration configuration, string sectionName) where T : class, new()

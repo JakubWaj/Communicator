@@ -110,3 +110,14 @@ C:\Users\beczk\RiderProjects\messenger\api\WebApi\obj\Debug\net8.0\refint\WebApi
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\obj\Debug\net8.0\WebApi.pdb
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\MediatR.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

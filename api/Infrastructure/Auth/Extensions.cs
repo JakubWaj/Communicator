@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Application.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +14,10 @@ public static class Extensions
     public static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)
     {
         var options = configuration.GetOptions<AuthOptions>(SectionName);
-        services.AddAuthentication(o =>
+        services.Configure<AuthOptions>(configuration.GetRequiredSection(SectionName))
+            .AddSingleton<IAuthenticator,Authenticator>()
+            .AddSingleton<ITokenStorage,HttpContextTokenStorage>()
+            .AddAuthentication(o =>
         {
             o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             o.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;

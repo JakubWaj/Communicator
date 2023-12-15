@@ -1,6 +1,8 @@
-﻿namespace Application.Commands.User.SignUpUser;
+﻿using Application.Abstraction;
+using Domain.ValueObjects.User;
 
-public class SignUpCommand
+namespace Application.Commands.User.SignUpUser;
+
+public record SignUpCommand(Guid UserId, string Email, string Username, string Password) : ICommand
 {
-    
 }

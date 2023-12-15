@@ -45,6 +45,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             }
           },
           "imports": [

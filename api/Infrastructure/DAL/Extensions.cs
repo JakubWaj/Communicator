@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Repository;
+using Infrastructure.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -15,6 +17,8 @@ public static class Extensions
         {
             opt.UseNpgsql(postgresOptions.ConnectionString);
         });
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;
     }
     

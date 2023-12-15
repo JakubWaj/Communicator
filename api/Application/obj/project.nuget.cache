@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "zGpnv4hTol0a7yU9F+jIxI4/w2wAknliiW4ELQspE6kqtUprQgktTpK/h8P+Qu+QveiSM1BO6ngvr6M5e9hwVQ==",
+  "dgSpecHash": "UK6+LVFf0wjSoTz86vxiElG+dt0FtKKa4Y4g38YeNiNy6Cln2fHJlE3Afs/NfgHfvzS0HWbEWhtbd52ukpIngg==",
   "success": true,
   "projectFilePath": "C:\\Users\\beczk\\RiderProjects\\messenger\\api\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beczk\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\beczk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\beczk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\microsoft.extensions.dependencymodel\\6.0.0\\microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

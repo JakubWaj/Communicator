@@ -1,5 +1,6 @@
 ﻿using Application.Security;
 using Domain.Entity;
+using Infrastructure.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 

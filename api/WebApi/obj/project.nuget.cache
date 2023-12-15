@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vkCfmFekqnO3JXhhm3Fsw7TgfFyKUbDWlgduplh4KHfVsvEIO8+HcD42dj4GZYgsoCFhpeirkjqBfp6ILVr9Fw==",
+  "dgSpecHash": "Nz6H10NmlV6xyYRq8NkChojSec/0iECOFHjDFT1xVVsXyPdCMC8SPvJO60Q+Kx4n6ADZ1KdXKULp7mwESr+ELw==",
   "success": true,
   "projectFilePath": "C:\\Users\\beczk\\RiderProjects\\messenger\\api\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\beczk\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "C:\\Users\\beczk\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\beczk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
