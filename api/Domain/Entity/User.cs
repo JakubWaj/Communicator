@@ -9,8 +9,8 @@ public class User
     public Email Email { get;private set; }
     public Password Password { get;private set; }
     public DateTime CreatedAt { get;private set; }
-
-
+    public ICollection<GroupUser> Groups { get;private set; }=new List<GroupUser>();
+    public ICollection<Message> Messages { get;private set; }=new List<Message>();
     public User(UserId id, Username username, Email email, Password password, DateTime createdAt)
     {
         Id = id;

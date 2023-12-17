@@ -2,6 +2,7 @@
 using Domain.ValueObjects.User;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Group = System.Text.RegularExpressions.Group;
 
 namespace Infrastructure.DAL.Configurations;
 
@@ -17,6 +18,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .HasConversion(x => x.Value, x => new Email(x))
             .IsRequired()
             .HasMaxLength(100);
+        builder.HasIndex(x => x.Email).IsUnique();
         builder.HasIndex(x => x.Username).IsUnique();
         builder.Property(x => x.Username)
             .HasConversion(x => x.Value, x => new Username(x))
