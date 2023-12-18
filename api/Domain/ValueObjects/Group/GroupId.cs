@@ -3,7 +3,7 @@ using Domain.ValueObjects.Message;
 
 namespace Domain.ValueObjects.Group;
 
-public class GroupId
+public record GroupId
 {
     
     public GroupId(Guid value)

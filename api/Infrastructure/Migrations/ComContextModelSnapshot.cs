@@ -57,7 +57,7 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Entity.Message", b =>
                 {
-                    b.Property<Guid>("MessageId")
+                    b.Property<Guid>("Id")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Content")
@@ -74,7 +74,7 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("MessageId");
+                    b.HasKey("Id");
 
                     b.HasIndex("GroupId");
 

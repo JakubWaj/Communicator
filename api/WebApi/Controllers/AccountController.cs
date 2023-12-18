@@ -1,6 +1,7 @@
 ﻿using Application.Commands.User.SignInUser;
 using Application.Commands.User.SignUpUser;
 using Application.DTO;
+using Application.Queries.User.GetAllUsers;
 using Application.Queries.User.GetUserByEmail;
 using Application.Queries.User.GetUserByGuid;
 using Application.Queries.User.GetUserByUsername;
@@ -24,8 +25,9 @@ public class AccountController : ControllerBase
     [HttpPost("signup")]
     public async Task<IActionResult> SignUp([FromBody] SignUpCommand command)
     {
-        await _mediator.Send(command);
-        return Ok();
+        Guid guid = Guid.NewGuid();
+        await _mediator.Send(command with{UserId = guid});
+        return CreatedAtAction(nameof(Get), new {guid}, null);
     }
     
     [HttpPost("signin")]
@@ -46,27 +48,35 @@ public class AccountController : ControllerBase
         
         var guid = Guid.Parse(User.Identity?.Name);
         var user = await _mediator.Send(new GetUserByIdQuery(){Id = guid});
-        return user;
+        return Ok(user);
     }
     
     [HttpGet("{userId:guid}")]
     public async Task<ActionResult<UserDto>> Get(Guid userId)
     {
         var user = await _mediator.Send(new GetUserByIdQuery(){Id = userId});
-        return user;
+        return Ok(user);
     }
     
     [HttpGet("username/{username}")]
     public async Task<ActionResult<UserDto>> Get(string username)
     {
         var user = await _mediator.Send(new GetUserByUsernameQuery(){Username = username});
-        return user;
+        return Ok(user);
     }
     
     [HttpGet("email/{email}")]
     public async Task<ActionResult<UserDto>> GetByEmail(string email)
     {
         var user = await _mediator.Send(new GetUserByEmailQuery(){Email = email});
-        return user;
+        return Ok(user);
     }
+    
+    [HttpGet("all")]
+    public async Task<ActionResult<IEnumerable<UserDto>>> GetAll()
+    {
+        var users = await _mediator.Send(new GetAllUsersQuery());
+        return Ok(users);
+    }
+    
 }

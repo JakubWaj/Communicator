@@ -7,7 +7,7 @@ namespace Domain.Entity;
 
 public class Message
 {
-    public MessageId MessageId { get; set; }
+    public MessageId Id { get; set; }
     public Content Content { get; set; }
     public DateTime CreatedAt { get; set; }
     public GroupId GroupId { get; set; }

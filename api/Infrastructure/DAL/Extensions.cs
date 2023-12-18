@@ -19,6 +19,8 @@ public static class Extensions
         });
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IMessageRepository,MessageRepository>();
+        services.AddScoped<IGroupRepository,GroupRepository>();
         return services;
     }
     

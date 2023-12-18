@@ -9,8 +9,8 @@ public class MessageConfiguration : IEntityTypeConfiguration<Message>
 {
     public void Configure(EntityTypeBuilder<Message> builder)
     {
-        builder.HasKey(x => x.MessageId);
-        builder.Property(x => x.MessageId)
+        builder.HasKey(x => x.Id);
+        builder.Property(x => x.Id)
             .HasConversion(x => x.Value, x => new MessageId(x));
         builder.Property(x => x.Content)
             .HasConversion(x => x.Value, x => new Content(x))
