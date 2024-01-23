@@ -121,3 +121,8 @@ C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.Ide
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\Scrutor.dll
 C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\beczk\RiderProjects\messenger\api\WebApi\bin\Debug\net8.0\appsettings.test.json

@@ -11,4 +11,5 @@ public interface IGroupRepository
     Task<Groups> GetByIdAsync(GroupId id);
     Task AddAsync(Groups group);
     Task AddUserToGroupAsync(GroupUser groupUser);
+    
 }

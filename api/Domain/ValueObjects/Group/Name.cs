@@ -8,7 +8,7 @@ public record Name
 
     public Name(string value)
     {
-        if (value.Length > 50 || value.Length < 3)
+        if (value.Length > 50 || value.Length < 3 || string.IsNullOrWhiteSpace(value))
         {
             throw new InvalidGroupNameException();
         }

@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2fe9b419_002D841b_002D45c6_002D821c_002D00e703e21051/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="given_invalid_password_should_fail #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.MessageTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.UserTest.Create_Email_ShouldFail&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.GroupTest.ConvertGroup_GroupDto_ShouldSuccess&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.GroupTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3e6b2dd3_002D24b5_002D44dc_002D8b82_002De3f1af3529d6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="given_invalid_password_should_fail #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.UserTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c7e8c773_002D0f6a_002D4d45_002D85f3_002Dfd7e617edc3b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="given_invalid_password_should_fail" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::FD27957F-0E3E-4C9E-B0B1-76702995CB57::net8.0::Api.Test.Unit.Entites.UserTest.given_invalid_password_should_fail&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

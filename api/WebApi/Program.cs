@@ -17,6 +17,18 @@ builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+} );
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,8 +38,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
 app.MapControllers();
 app.UseHttpsRedirection();
+
+app.MapGet("/", () => "Hello World!");
+
 app.MapPost("/SignUp2", async (SignUpCommand command, IMediator mediator) =>
     {
         command = command with {UserId = Guid.NewGuid()};
@@ -36,6 +53,8 @@ app.MapPost("/SignUp2", async (SignUpCommand command, IMediator mediator) =>
     })
     .WithName("SignUp")
     .WithOpenApi();
+
+app.UseCors("AllowAll");
 
 app.MapGet("testowankoDD", async (IGroupRepository groupRepository) =>
 {

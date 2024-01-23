@@ -30,6 +30,12 @@ public class AddUserToGroupCommandHandler : ICommandHandler<AddUserToGroupComman
         {
             return Result.Failure(new Error("400", "Invalid credentials"));
         }
+
+        if (group.Users.Any(x => x.UserId == userId))
+        {
+            return Result.Failure(new Error("400", "User already in group"));
+        }
+        
         var groupUser = new GroupUser()
         {
             GroupId = groupId,
