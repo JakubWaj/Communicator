@@ -26,7 +26,11 @@ public class AccountController : ControllerBase
     public async Task<IActionResult> SignUp([FromBody] SignUpCommand command)
     {
         Guid guid = Guid.NewGuid();
-        await _mediator.Send(command with{UserId = guid});
+        var result = await _mediator.Send(command with{UserId = guid});
+        if (result.IsFailure)
+        {
+            return BadRequest(result.Error);
+        }
         return CreatedAtAction(nameof(Get), new {guid}, null);
     }
     

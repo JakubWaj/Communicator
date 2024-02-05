@@ -85,8 +85,13 @@ const Register = () => {
                 });
                 setSuccess(true);
                 console.log(response);
+  
                 console.log(response.data);
         }catch (err: any){
+            if (err.response.status === 400) {
+                setErrMsg("Użytkownik o podanym adresie email/nazwie już istnieje");
+                return;
+            }
             if (!err.response) {
                 setErrMsg("Błąd połączenia");
                 return;
@@ -100,12 +105,13 @@ const Register = () => {
                     <h2>Rejestracja zakończona sukcesem</h2>
                     <p>Na podany adres email została wysłana wiadomość z linkiem aktywacyjnym</p>
                     <p>
-                        <a href="#">Zaloguj się</a>
+                        <a href="http://localhost:5173/login">Zaloguj się</a>
                     </p>
                 </section>
             ) : (
-                
+                      
         <section>
+            <h1>Sign Up</h1>
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live={"assertive"}>
                 {errMsg}
             </p>
@@ -196,6 +202,13 @@ const Register = () => {
                 </p>
                 <button disabled={!validMatch || !validName || !validPwd || !validEmail}>Zarejestruj się</button>
             </form>
+            <p>
+                Already have a account?<br />
+                <span className="line">
+                            {/*put router link here*/}
+                    <a href="http://localhost:5173/login">Sign In</a>
+                        </span>
+            </p>
         </section>)
             }
         </>

@@ -20,6 +20,7 @@ public static class Extensions
         var users = group.Users;
         return new GroupDto()
         {
+            Id = group.Id,
             Name = group.Name,
             Messages = group.Messages.Select(x => x.AsDto()).ToList(),
             Users = group.Users.Select(x => x.User.AsDto()).ToList()
@@ -30,6 +31,7 @@ public static class Extensions
     {
         return new MessageDto()
         {
+            Id = message.Id,
             Content = message.Content,
             CreatedAt = message.CreatedAt,
             UserId = message.UserId

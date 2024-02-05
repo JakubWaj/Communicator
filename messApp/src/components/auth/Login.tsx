@@ -1,16 +1,18 @@
 ﻿import { useRef, useState, useEffect, useContext,FormEvent } from 'react';
-import AuthContext from "../../context/AuthProvider";
-
+import useAuth from "../../hooks/useAuth.ts";
 import axios from "../api/axios"
 const LOGIN_URL = '/api/Account/signin';
-
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import Cookies from 'js-cookie';
 const Login = () => {
     
     // @ts-ignore
-    const { setAuth } = useContext(AuthContext);
+    const {setAuth} = useAuth();
     const userRef = useRef<HTMLInputElement>(null);
     const errRef = useRef<HTMLParagraphElement>(null);
-
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/main";
     const [email, setEmail] = useState('');
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
@@ -28,6 +30,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
+            Cookies.remove('accessToken');
             const response = await axios.post(LOGIN_URL,
                 {   
                     email,
@@ -40,6 +43,8 @@ const Login = () => {
             setAuth({ email, pwd, accessToken });
             setEmail(''); 
             setPwd('');
+            Cookies.set('accessToken', accessToken, { expires: 30 });
+            navigate(from, { replace: true });
             setSuccess(true);
         } catch (err :any) {
             if (!err?.response) {
@@ -91,7 +96,7 @@ const Login = () => {
                         Need an Account?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a href="#">Sign Up</a>
+                            <a href="http://localhost:5173/Register">Sign Up</a>
                         </span>
                     </p>
                 </section>
