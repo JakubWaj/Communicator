@@ -1,1 +1,0 @@
-[{"Name":"Azor","Race":"Owczarek","Age":5,"Weight":25.5,"Look":{"Color":"Red","Size":"Big"}},{"Name":"Burek","Race":"Kundel","Age":3,"Weight":15.5,"Look":{"Color":"Blue","Size":"Small"}},{"Name":"Reksio","Race":"Jamnik","Age":2,"Weight":5.5,"Look":{"Color":"Green","Size":"Medium"}}]
