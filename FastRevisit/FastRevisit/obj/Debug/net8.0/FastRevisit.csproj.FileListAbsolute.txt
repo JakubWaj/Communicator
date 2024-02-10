@@ -1,0 +1,15 @@
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\bin\Debug\net8.0\FastRevisit.exe
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\bin\Debug\net8.0\FastRevisit.deps.json
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\bin\Debug\net8.0\FastRevisit.runtimeconfig.json
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\bin\Debug\net8.0\FastRevisit.dll
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\bin\Debug\net8.0\FastRevisit.pdb
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.AssemblyInfoInputs.cache
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.AssemblyInfo.cs
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.csproj.CoreCompileInputs.cache
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.sourcelink.json
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.dll
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\refint\FastRevisit.dll
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.pdb
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\FastRevisit.genruntimeconfig.cache
+C:\Users\beczk\RiderProjects\messenger\FastRevisit\FastRevisit\obj\Debug\net8.0\ref\FastRevisit.dll

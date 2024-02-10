@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FastRevisit/1.0.0": {
+        "runtime": {
+          "FastRevisit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FastRevisit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
